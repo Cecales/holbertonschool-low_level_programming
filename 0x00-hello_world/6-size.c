@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*
- * main - Prints the size of different types of variables
- * and Return: 0 Always.
+/**
+ * main - Prints "The size of different types of variables
+ * Return: 0 Always.
  */
 
 int main(void)
