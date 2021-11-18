@@ -1,8 +1,8 @@
 # 0x14 C - Bit manipualtion
 
-##Resources
+## Resources
 
-###Read or watch:
+### Read or watch:
 
 * Google
 * Youtube
