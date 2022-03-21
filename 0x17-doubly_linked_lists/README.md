@@ -37,7 +37,7 @@ At the end of this project, you are expected to be able to explain to anyone, __
 
 Please use this data structure for this project:
 
-´´´
+```
 /**
  * struct dlistint_s - doubly linked list
  * @n: integer
@@ -54,4 +54,4 @@ typedef struct dlistint_s
     struct dlistint_s *next;
 } dlistint_t;
 
-´´´
+```
