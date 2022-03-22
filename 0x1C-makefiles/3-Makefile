@@ -1,0 +1,36 @@
+# Makefile that build an executable file of the school.c file
+# Variables
+# CC: the compiler to be used
+# SCR: the .c files
+# OBJ: the .o files
+# NAME: name of the executable
+# RM: the program to delete files
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(patsubst %.c,%.o,$(SRC))
+NAME = school
+RM = rm -f
+
+# all: builds your executable
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# clean: deletes all Emacs and Vim temporary files along with the executable
+
+clean:
+	$(RM) *.swp *~ $(NAME)
+
+# oclean: deletes the object files
+
+oclean:
+	$(RM) $(OBJ)
+
+# fclean: deletes all Emacs and Vim temporary files, the executable, and the object files
+
+fclean: clean oclean
+
+# re: forces recompilation of all source files
+
+re: fclean all
