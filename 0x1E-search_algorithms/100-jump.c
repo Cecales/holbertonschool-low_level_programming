@@ -1,6 +1,7 @@
 #include "search_algos.h"
 #include <stdio.h>
 #include <math.h>
+
 /**
  * jump_search - search value using jump search algo.
  * @array: array to search algo
@@ -8,6 +9,7 @@
  * @value: value to be retrieve
  * Return: first index where value is located
  */
+
 int jump_search(int *array, size_t size, int value)
 {
 	int step = sqrt(size), step_back;
